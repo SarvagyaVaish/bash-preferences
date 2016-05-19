@@ -1,0 +1,13 @@
+Debug/
+Release/
+x64/
+x86/
+
+ipch/
+*.aps
+*.opensdf
+*.sdf
+*.suo
+*.user
+
+.gitignore

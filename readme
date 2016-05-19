@@ -1,0 +1,32 @@
+// ---- .gitconfig ----
+// Located at ~
+
+[user]
+        email = sarvagya.vaish7@gmail.com
+        name = Survy
+[core]
+        excludesfile = c:/Users/Survy/.scripts/.gitignore
+[alias]
+        s = status
+        c = checkout
+        m = checkout master
+        g = grep -i -n -E --break
+
+
+// ---- .bash_profile ----
+// Located at ~
+
+if [ -f ~/.scripts/.bashrc ]; then
+    source ~/.scripts/.bashrc
+fi
+
+
+// ---- .scripts/ ----
+// Folder located at ~
+// Put the following files in here:
+//     
+//     .bashrc
+//     .gitignore
+//     OpenGithub.sh
+//     TailMostRecent.sh
+//     UpdateRepo.sh

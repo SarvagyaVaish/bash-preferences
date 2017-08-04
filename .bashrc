@@ -5,7 +5,9 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 # export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 
 # ls for mac
-alias ls="ls -laFiGh"
+# alias ls="ls -laFiGh"
+alias ls="exa -la --group-directories-first --sort Extension --git"
+alias ll="ls"
 
 # gitk showing all branches
 alias gitkk="gitk --all &"
@@ -22,9 +24,16 @@ fi
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
-export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
+export PS1="\\[\e[0;36m\\]\u\\[\e[m\\] \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 
 alias pi_recv="scp -r pi@192.168.0.119:~/TennisTracker/images ~/TTImages"
 # alias pi_send="scp -r ~/TennisTracker pi@192.168.0.119:~/"
 
+alias st='git status'
+alias br='git branch'
+alias ad='git add -A'
+alias cm='git commit -m'
+alias b='cd ..'
+alias bb='b && b'
+alias bbb='bb && b'

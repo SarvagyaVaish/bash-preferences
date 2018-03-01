@@ -37,3 +37,8 @@ alias cm='git commit -m'
 alias b='cd ..'
 alias bb='b && b'
 alias bbb='bb && b'
+alias gor='cd ~/Documents/cobalt_code/cobalt_behaviors/src'
+
+alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+
+alias flushvpn='sudo ifconfig en0 down && sudo route flush && sudo ifconfig en0 up'
